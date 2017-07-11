@@ -1,0 +1,833 @@
+/* Reset CSS
+ * --------------------------------------- */
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+table {
+    border-spacing: 0;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-weight: normal;
+    font-style: normal;
+}
+
+strong {
+    font-weight: bold;
+}
+
+ol,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    color: #444;
+}
+
+q:before,
+q:after {
+    content: '';
+}
+
+abbr,
+acronym {
+    border: 0;
+}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+
+.loader {
+    z-index: 9999;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: rgba(249, 249, 249, 1);
+}
+
+.loader h1 {
+    margin-top: 23%;
+}
+
+header {
+    z-index: 1000;
+    position: fixed;
+    padding: 25px;
+    width: 100%;
+}
+
+.logo {
+    float: left;
+    margin-top: 15px;
+    width: 250px;
+    height: 35px;
+    background: url(http://jorgegwd.com/konvergy/images/konvergy-logo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease;
+}
+
+.fp-viewing-contact .logo {
+    background: url(http://jorgegwd.com/konvergy/images/konvergy-logo-b.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease;
+}
+
+#menu {
+    float: right;
+    font-size: 18px;
+    /*font-family: 'Oswald', sans-serif;*/
+    font-family: 'Arial', sans-serif;
+}
+
+#menu li,
+.user-menu li {
+    display: inline-block;
+    margin: 10px;
+    padding: 0px 10px;
+    /*background: #fff;
+    background: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;*/
+    font-weight: bold;
+}
+
+#menu li.active,
+.user-menu li.active {
+    /*background: #666;
+    background: rgba(0, 0, 0, 0.5);*/
+    color: #cc2229;
+}
+
+#menu li a,
+.user-menu li a {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.5s ease;
+}
+
+.fp-viewing-contact #menu li a,
+.fp-viewing-contact .user-menu li a {
+    color: #fff;
+}
+
+#menu li a:hover,
+.user-menu li a:hover {
+    color: #cc2229;
+    transition: all 0.5s ease;
+}
+
+#menu li.active a:hover {
+    color: #cc2229;
+}
+
+
+/*#menu li:hover,
+.user-menu li:hover {
+    background: rgba(255, 255, 255, 0.8);
+}*/
+
+#menu li a,
+#menu li.active a,
+.user-menuli a,
+.user-menu li.active a {
+    padding: 10px;
+    display: block;
+}
+
+
+/*#menu li.active a,
+.user-menu li.active a {
+    color: #cc2229;
+}*/
+
+.user-menu {
+    margin: 0px;
+    padding: 10px;
+    float: right;
+    font-size: 18px;
+}
+
+#fullpage {
+    z-index: 100;
+}
+
+.grill table {
+    position: absolute;
+    top: 0px;
+    right: 160px;
+    width: 55%;
+    height: 100%;
+}
+
+.grill table td {
+    position: relative;
+    border-right: 1px solid rgba(204, 204, 204, 1);
+}
+
+.tec.socials {
+    top: 500px;
+    left: 0px;
+    background-color: #003dd0;
+}
+
+.mark.socials {
+    top: 180px;
+    left: 0px;
+    background-color: #8c1d96;
+}
+
+.ent.socials {
+    top: 150px;
+    right: 0px;
+    background-color: #fc7700;
+}
+
+.rs.socials {
+    top: 180px;
+    right: 0px;
+    background-color: #4fb10e;
+}
+
+.socials {
+    z-index: 100;
+    position: absolute;
+    top: 200px;
+    width: 75px;
+    background-color: #cc2229;
+}
+
+.socials li {
+    padding: 15px;
+    list-style: none;
+}
+
+.socials i {
+    font-size: 50px;
+}
+
+.socials a,
+.socials a:hover {
+    color: #fff;
+}
+
+
+/* Section
+ * --------------------------------------- */
+
+.section {
+    overflow: hidden;
+}
+
+
+/*.section {
+    position: relative;
+    padding: 100px 0px;
+}*/
+
+.section-title {
+    position: absolute;
+    width: 100%;
+    top: 100px;
+}
+
+.section-title h1 {
+    font-size: 30px;
+    font-family: 'Lucida-Regular', sans-serif;
+    /*font-family: 'Khand', sans-serif;
+    color: #cc2229;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);*/
+}
+
+#section1 .section-title h1 {
+    color: #003dd0;
+}
+
+#section2 .section-title h1 {
+    color: #8c1d96;
+}
+
+#section3 .section-title h1 {
+    color: #fc7700;
+}
+
+#section4 .section-title h1 {
+    color: #4fb10e;
+}
+
+#section1 .section-title,
+#section2 .section-title,
+#section3 .section-title {
+    left: 30px;
+}
+
+#section4 .section-title {
+    text-align: right;
+    right: 30px;
+}
+
+.section h2 {
+    position: absolute;
+    top: 150px;
+    width: 600px;
+    text-align: right;
+    font-size: 30px;
+    font-family: 'Lucida-Regular', sans-serif;
+    color: #333;
+    /*text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);*/
+}
+
+#section1 h2 {
+    top: 200px;
+    right: 30px;
+}
+
+#section2 h2 {
+    top: 100px;
+    right: 80px;
+}
+
+#section3 h2 {
+    top: 200px;
+    right: 100px;
+}
+
+#section4 h2 {
+    top: 200px;
+    right: 100px;
+}
+
+.section p {
+    font-family: 'Calibri', sans-serif;
+    font-size: 25px;
+    color: #fff;
+}
+
+.section a:hover,
+.section a:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+.more-button {
+    padding: 10px 35px;
+    font-size: 14px;
+    color: #fff;
+    /* text-transform: uppercase; */
+    text-decoration: none;
+    border: 2px solid #fff;
+}
+
+.slide {
+    z-index: 100;
+    position: relative;
+    height: 100%;
+}
+
+#section0 {
+    overflow: hidden;
+}
+
+.konvergy-title {
+    z-index: 100;
+    position: absolute;
+    bottom: 200px;
+    right: -1px;
+    width: 557px;
+    height: 165px;
+    border: 1px solid rgba(204, 204, 204, 1);
+    background-color: #cc2229;
+}
+
+.konvergy-title h1 {
+    /*float: right;*/
+    padding: 20px 40px;
+    margin: 0px;
+    font-size: 40px;
+    line-height: 1.5;
+    /*text-align: right;*/
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    /*text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);*/
+}
+
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    /*background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;*/
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+.controls-arrows {
+    position: absolute;
+    right: 0px;
+    bottom: 50px;
+    width: 150px;
+    text-align: center;
+}
+
+.controls-arrows p {
+    font-size: 12px;
+}
+
+.fp-controlArrow.fp-next,
+.fp-controlArrow.fp-prev {
+    border-color: transparent;
+}
+
+.prev-arrows {
+    z-index: 100;
+    position: absolute;
+    bottom: -10px;
+    width: 30px;
+    height: 16px;
+    transform: rotate(90deg);
+}
+
+.next-arrows {
+    z-index: 100;
+    position: absolute;
+    right: 0px;
+    bottom: -10px;
+    width: 30px;
+    height: 16px;
+    transform: rotate(-90deg);
+}
+
+.prev:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 51%;
+    background: #fff;
+    transform: skew(0deg, 30deg);
+}
+
+.prev:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background: #fff;
+    transform: skew(0deg, -30deg);
+}
+
+.next:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 51%;
+    background: #fff;
+    transform: skew(0deg, 30deg);
+}
+
+.next:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background: #fff;
+    transform: skew(0deg, -30deg);
+}
+
+.background-title {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+.background-title h1 {
+    margin: 0px;
+    font-size: 19em;
+    color: rgba(0, 0, 0, .3);
+    font-weight: bold;
+}
+
+.background-title img {
+    position: absolute;
+    left: -150px;
+    bottom: -80px;
+    opacity: .6;
+}
+
+
+/* .info-box
+*-----------------------------------------------*/
+
+.tec.info-box {
+    left: 0px;
+    height: 500px;
+    padding: 35px;
+    background-color: #003dd0;
+}
+
+.mark.info-box {
+    right: 0px;
+    padding: 35px;
+    background-color: #8c1d96;
+}
+
+.ent.info-box {
+    right: 0px;
+    padding: 35px;
+    background-color: #fc7700;
+}
+
+.rs.info-box {
+    right: 0px;
+    padding: 35px;
+    background-color: #4fb10e;
+}
+
+.info-box {
+    z-index: 120;
+    top: 200px;
+    position: absolute;
+    width: 400px;
+    color: #fff;
+}
+
+.info-box h1 {
+    margin: 20px 0px;
+    font-family: 'Lucida-Regular', sans-serif;
+    text-transform: uppercase;
+}
+
+.info-box p {
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 19px;
+}
+
+
+/* Marketing
+*---------------------------------------------------*/
+
+.transform {
+    position: absolute;
+    right: 0px;
+    bottom: 150px;
+    transform: rotate(90deg);
+}
+
+.newsletter h4 {
+    position: relative;
+    top: -8px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.arrows {
+    position: absolute;
+    bottom: 10px;
+    transform: rotate(-90deg);
+}
+
+.arrow-1 {
+    z-index: 100;
+    position: absolute;
+    bottom: 16px;
+    width: 20px;
+    height: 10px;
+}
+
+.arrow-2 {
+    z-index: 100;
+    position: absolute;
+    bottom: 29px;
+    width: 20px;
+    height: 10px;
+}
+
+.arrow-3 {
+    z-index: 100;
+    position: absolute;
+    bottom: 42px;
+    width: 20px;
+    height: 10px;
+}
+
+.arrow-color:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 51%;
+    transform: skew(0deg, 30deg);
+}
+
+.arrow-color:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    transform: skew(0deg, -30deg);
+}
+
+.newsletter .arrow-color:before,
+.newsletter .arrow-color:after {
+    background: red;
+}
+
+.tecnology-blog .arrow-color:before,
+.tecnology-blog .arrow-color:after {
+    background: #003dd0;
+}
+
+.marketing-blog .arrow-color:before,
+.marketing-blog .arrow-color:after {
+    background: #8c1d96;
+}
+
+.learning .arrow-color:before,
+.learning .arrow-color:after {
+    background: #fc7700;
+}
+
+.rrss .arrow-color:before,
+.rrss .arrow-color:after {
+    background: #4fb10e;
+}
+
+.tecnology-blog,
+.marketing-blog,
+.learning,
+.rrss {
+    position: relative;
+    right: 0px;
+    bottom: 0px;
+}
+
+.tecnology-blog h4,
+.marketing-blog h4,
+.learning h4,
+.rrss h4 {
+    position: relative;
+    top: -8px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+​.contactos {
+    position: relative;
+    color: #fff;
+}
+
+.contac-box {
+    position: absolute;
+    top: 400px;
+    left: 0px;
+    max-width: 600px;
+    padding: 50px 80px;
+    background-color: #fff;
+}
+
+.contac-box h3 {
+    margin: 10px;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.contac-box select {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+select.form-control {
+    height: auto;
+    border: none;
+}
+
+
+/* Images
+*---------------------------------------------------*/
+
+img.tecnology-01 {
+    position: absolute;
+    top: 350px;
+    right: -80px;
+    width: 600px;
+}
+
+img.tecnology-02 {
+    position: absolute;
+    top: 120px;
+    left: 0px;
+    width: 600px;
+}
+
+img.tecnology-03 {
+    position: absolute;
+    top: 400px;
+    right: -80px;
+    width: 600px;
+}
+
+img.tecnology-04 {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: 550px;
+}
+
+img.tecnology-06 {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: 600px;
+}
+
+img.marketing-01 {
+    position: absolute;
+    top: 350px;
+    right: 0px;
+    width: 500px;
+}
+
+img.marketing-02 {
+    position: absolute;
+    top: 450px;
+    left: 0px;
+    width: 600px;
+}
+
+img.marketing-03 {
+    position: absolute;
+    top: 350px;
+    right: 0px;
+    width: 600px;
+}
+
+img.marketing-04 {
+    position: absolute;
+    top: 450px;
+    left: 0px;
+    width: 600px;
+}
+
+img.marketing-06 {
+    position: absolute;
+    top: 450px;
+    left: 0px;
+    width: 600px;
+}
+
+img.entertainment-01 {
+    position: absolute;
+    top: 450px;
+    right: 0px;
+    width: 600px;
+}
+
+img.entertainment-02 {
+    position: absolute;
+    top: 250px;
+    left: 0px;
+    width: 400px;
+}
+
+img.entertainment-03 {
+    position: absolute;
+    top: 450px;
+    right: 0px;
+    width: 600px;
+}
+
+img.entertainment-04 {
+    position: absolute;
+    top: 250px;
+    left: 0px;
+    width: 400px;
+}
+
+
+/*Custom Animations
+*---------------------------------------------------*/
+
+
+/*.socials .slideInDown {
+    animation-delay: 5s;
+}*/

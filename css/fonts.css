@@ -1,0 +1,13 @@
+@font-face {
+    font-family: Calibri;
+    src: url("../fonts/calibri.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Lucida-Regular;
+    src: url("../fonts/lucida-sans-regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
